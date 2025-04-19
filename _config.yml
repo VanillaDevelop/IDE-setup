@@ -23,10 +23,10 @@ email: vanilla@nya.gg
 description: >- # this means to ignore newlines until "baseurl:"
   This website features a collection of dev setup tweaks I make to ensure my development environment is set up
   to my preferred specifications!
-domain: vanilladev-setup.github.io
-baseurl: https://vanilladev-setup.github.io
-url: /
-github_username:  VanillaDev
+domain: vanilladevelop.github.io
+baseurl:  https://vanilladevelop.github.io
+url: /ide-setup
+github_username:  VanillaDevelop
 
 # Build settings
 theme: minima
