@@ -1,0 +1,49 @@
+<keymap version="1" name="Windows-Custom" parent="$default">
+    <action id="ActivateBookmarksToolWindow"/>
+    <action id="ActivateCommitToolWindow"/>
+    <action id="ActivateDebugToolWindow">
+        <keyboard-shortcut first-keystroke="alt 5"/>
+        <keyboard-shortcut first-keystroke="alt 3"/>
+    </action>
+    <action id="ActivateFindToolWindow"/>
+    <action id="ActivateTerminalToolWindow">
+        <keyboard-shortcut first-keystroke="alt f12"/>
+        <keyboard-shortcut first-keystroke="alt 2"/>
+    </action>
+    <action id="Back">
+        <keyboard-shortcut first-keystroke="ctrl alt left"/>
+        <mouse-shortcut keystroke="button4"/>
+        <keyboard-shortcut first-keystroke="shift down"/>
+    </action>
+    <action id="EditorDownWithSelection"/>
+    <action id="EditorLeftWithSelection"/>
+    <action id="EditorRightWithSelection"/>
+    <action id="EditorUpWithSelection"/>
+    <action id="Forward">
+        <keyboard-shortcut first-keystroke="ctrl alt right"/>
+        <mouse-shortcut keystroke="button5"/>
+        <keyboard-shortcut first-keystroke="shift up"/>
+    </action>
+    <action id="HideAllWindows">
+        <keyboard-shortcut first-keystroke="shift ctrl f12"/>
+        <keyboard-shortcut first-keystroke="alt 0"/>
+    </action>
+    <action id="List-selectNextColumnExtendSelection"/>
+    <action id="NextTab">
+        <keyboard-shortcut first-keystroke="alt right"/>
+        <keyboard-shortcut first-keystroke="shift right"/>
+    </action>
+    <action id="PreviousTab">
+        <keyboard-shortcut first-keystroke="alt left"/>
+        <keyboard-shortcut first-keystroke="shift left"/>
+    </action>
+    <action id="SelectInProjectView">
+        <keyboard-shortcut first-keystroke="shift alt 1"/>
+    </action>
+    <action id="Table-selectNextColumnExtendSelection"/>
+    <action id="Table-selectPreviousColumnExtendSelection"/>
+    <action id="Table-selectPreviousRowExtendSelection"/>
+    <action id="Terminal.ExpandBlockSelectionAbove"/>
+    <action id="Tree-selectParentExtendSelection"/>
+    <action id="Tree-selectPreviousExtendSelection"/>
+</keymap>
