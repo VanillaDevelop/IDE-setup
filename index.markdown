@@ -82,8 +82,10 @@ So far, I only configured this file to do the following:
 
 **GitHub Copilot**
 
-I am currently using GitHub Copilot integration in JetBrains for auto-completion and minor problem-solving. I am
-using this plugin with default settings.
+I am currently using GitHub Copilot integration in JetBrains for auto-completion and minor problem-solving.
+I disable completions for Markdown files in order to write my own documentation without distractions. Since many of
+my websites are also based on static-site-generation using markdown files, the auto-completion mostly just gets in the
+way of writing more elaborate articles (like this one).
 
 **EditorJumper**
 
