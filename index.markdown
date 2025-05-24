@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Home
 ---
@@ -28,14 +25,27 @@ utility to globally remap these hotkeys.
 
 ![Keyboard Remapping using PowerToys](assets/images/windows-keyboard-remap.png)
 
+### Linux (Ubuntu)
+
+**Neovim**  
+As Linux utilizes the command-line a lot more than Windows, I do actually bother setting up Neovim properly. I set it as
+the default editor by adding `export EDITOR="/usr/bin/nvim"` to `~/.bashrc` and `~/.profile`. My current `init.lua`
+file, which is placed under `~/.config/nvim`, can be found [here](assets/files/init.lua).
+
+**Arrow Key Remap**
+
+On Linux, arrow keys can easily be remapped using the `keyd` [package](https://github.com/rvaiya/keyd). After installing
+and running it as a service, we can set up a config file in `/etc/keyd/default.conf`. It can be
+downloaded [here](assets/files/default.conf). The command `sudo keyd.rvaiya reload` can be used to apply the
+configuration (the custom name is due to using the ppa package for Ubuntu, otherwise it might just be `keyd`).
+
 ## JetBrains IDE Setup
 
 ### Keybindings
 
 The keybinding setup is based on a fresh copy of the default JetBrains keybindings. The keybindings can be found at
-`%APPDATA%\JetBrains\<product>\keymaps`. My current keybindings can be found here:
-
-- Windows: [Windows-Custom](assets/files/Windows-Custom.xml)
+`%APPDATA%\JetBrains\<product>\keymaps` for Windows, or `~/.config/JetBrains/<product>/keymaps` for Linux. My current
+keybindings can be found [here](assets/files/Windows-Custom.xml).
 
 **Editor Tabs**
 
@@ -47,8 +57,8 @@ mappings:
 - Editor Tabs -> Select Previous Tab (Shift+Left => Effectively Shift+Alt+H)
 - Editor Tabs -> Select Next Tab (Shift+Right => Effectively Shift+Alt+L)
 
-In order for the IDE to process these shortcuts instead of Vim, in Settings -> Editor -> Vim, the handler for
-these keymappings has to be set to "IDE".
+In order for the IDE to process these shortcuts instead of Vim, in Settings -> Editor -> Vim, the handler for these
+keymappings has to be set to "IDE".
 
 **Tool Windows**
 
@@ -72,13 +82,8 @@ framework-specific.
 **IdeaVim**
 
 The main plugin that I am trying to get accustomed to is IdeaVim, which adds a Vim-like environment to JetBrains IDEs.
-IdeaVim comes with a configurable `~.ideavimrc` file, which can be found here:
-
-- [.ideavimrc](assets/files/ideavimrc)
-
-So far, I only configured this file to do the following:
-
-- Remap jj to escape insert mode.
+IdeaVim comes with a configurable `~.ideavimrc` file, which can be found [here](assets/files/ideavimrc).
+The file is based on my Neovim configuration (admittedly automatically translated by AI because I can't be bothered).
 
 **GitHub Copilot**
 

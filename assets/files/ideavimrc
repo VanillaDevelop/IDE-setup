@@ -1,1 +1,72 @@
-:inoremap jj <Esc>
+" .ideamvimrc - Configuration for IdeaVim
+
+" --- Leader Keys ---
+" Sets the leader key to '.'
+let mapleader = '.'
+" Sets the local leader key to '.' (often the same as the global leader)
+let maplocalleader = '.'
+
+" --- Mouse Support ---
+" Enables mouse support in all modes (Normal, Visual, Insert)
+set mouse=a
+
+" --- Yank/Paste to Clipboard ---
+" Uses the system clipboard for all yank, delete, and put operations.
+" This allows seamless copy-pasting between Vim and other applications.
+set clipboard=unnamedplus
+
+" --- No Wrap ---
+" Disables line wrapping. Long lines will extend beyond the screen width.
+set nowrapon
+
+" --- Keep Cursor Centered ---
+" Keeps 8 lines visible above and below the cursor when scrolling.
+set scrolloff=8
+" Keeps 5 columns visible to the left and right of the cursor when scrolling horizontally.
+set sidescrolloff=5
+
+" --- Line Numbers ---
+" Displays line numbers.
+set number
+" Displays relative line numbers (useful for vertical movements).
+set relativenumber
+
+" --- Show Matching Bracket ---
+" Highlights matching brackets when the cursor is over one.
+set showmatch
+
+" --- Indentation ---
+" Sets the number of spaces for a tab character.
+set tabstop=4
+" Sets the number of spaces for indentation operations (like >> and <<).
+set softtabstop=4
+" Sets the number of spaces for auto-indentation.
+set shiftwidth=4
+" Enables smart indentation, which automatically adjusts indentation based on code structure.
+set smartindent
+" Enables auto-indentation, which carries over indentation from the previous line.
+set autoindent
+
+" --- Search (Ignore case unless uppercase letter is present) ---
+" Ignores case when searching.
+set ignorecase
+" Overrides 'ignorecase' if the search pattern contains an uppercase letter.
+set smartcase
+
+" --- Search (Highlight and Incrementally Search) ---
+" Highlights all matches for the current search.
+set hlsearch
+" Shows search matches as you type.
+set incsearch
+
+" --- Window Splitting ---
+" New vertical splits will appear on the right.
+set splitright
+" New horizontal splits will appear below.
+set splitbelow
+
+" --- Keybinds ---
+" Maps 'jj' in Insert mode to <Esc> (Escape) for easier mode switching.
+" 'noremap' ensures it's a non-recursive mapping.
+" 'silent' prevents the command from being echoed.
+inoremap <silent> jj <Esc>
